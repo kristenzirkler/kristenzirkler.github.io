@@ -1,0 +1,21 @@
+$accent: #00acc8;
+$text: #2b2b2b;
+
+$links: $accent;
+$body-background: #333;
+$page-background: #fff;
+$body-font: "Lato",Helvetica,Arial,sans-serif;
+$header-font: "Lato",Helvetica,Arial,sans-serif;
+
+$page-width: 700px;
+
+$button: $accent;
+$sugarWidth: 125px;
+$sugarFont: 'Dancing Script', cursive;
+
+@mixin animation($variables) {
+  -webkit-animation: $variables; /* Safari 4+ */
+  -moz-animation:    $variables; /* Fx 5+ */
+  -o-animation:      $variables; /* Opera 12+ */
+  animation:         $variables; /* IE 10+, Fx 29+ */
+}

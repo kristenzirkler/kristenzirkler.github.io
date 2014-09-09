@@ -1,0 +1,75 @@
+.site-tag {
+    padding: 1em;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    h3 {
+      font-size: 2em;
+      margin: 0 0 .2em;
+    }
+    p { 
+        margin: 0 0 .5em;
+        font-size: .8em;
+        text-transform: uppercase;
+    }
+    a {
+      color: #fff;
+      &:hover {
+        color: $accent;
+      }
+    }
+    .social {
+      a {
+        font-size: 1.3em;
+        color: #fff;
+      }
+    }
+}
+.bg {
+    position: fixed; 
+    top: -55%; 
+    left: -55%; 
+    width: 210%; 
+    height: 210%;
+    z-index: -1;
+    opacity: .7;
+    img {
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      right: 0; 
+      bottom: 0; 
+      margin: auto; 
+      min-width: 50%;
+      min-height: 50%;
+      -webkit-filter: blur(8px); 
+    }
+}
+
+.aside {
+  margin: auto;
+  text-align: center;
+  width: $sugarWidth;
+}
+.sugar {
+  margin-bottom: 2em;
+  .tag {
+    font-family: $sugarFont;
+    color: #fff;
+    font-size: 1.1em;
+    display: block;
+  }
+  .image {
+    position: relative;
+    text-align: center;
+    display: block;
+    width: $sugarWidth - 16;
+    height: $sugarWidth - 16;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid #fff;
+  }
+  img {
+    width: 100%;
+  }
+}

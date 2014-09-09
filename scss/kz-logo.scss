@@ -1,0 +1,267 @@
+$final-opacity: 1;
+$line-weight: 1px;
+$circle-weight: 3px;
+
+.kz-logo-line {
+  //width: 1200px;
+  height: 110px;
+  position: absolute;
+  margin: 3em auto;
+  bottom: 0;
+  right: 0; left: 0;
+}
+.line, .k, .z {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
+  opacity: $final-opacity;
+}
+.line {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 0;
+  @include animation(line-ani 8s);
+}
+.k {
+  stroke-dasharray: 150;
+  stroke-dashoffset: 0;
+  @include animation(k-ani 3s);
+}
+.z {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 0;
+  @include animation(z-ani 2.5s ease-in);
+}
+.kz {
+  display: block;
+  margin-left: -55px;
+}
+
+/* Keyframes */
+@-webkit-keyframes line-ani {
+  0% {
+    stroke-dashoffset: 1500;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: $final-opacity;
+  }
+}
+@-moz-keyframes line-ani {
+  0% {
+    stroke-dashoffset: 1500;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: $final-opacity;
+  }
+}
+@keyframes line-ani {
+  0% {
+    stroke-dashoffset: 1500;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: $final-opacity;
+  }
+}
+@-webkit-keyframes k-ani {
+  0% {
+    stroke-dashoffset: -160;
+    opacity: 0;
+  }
+  30% {
+    stroke-dashoffset: -150;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: $final-opacity;
+  }
+}
+@-moz-keyframes k-ani {
+  0% {
+    stroke-dashoffset: -160;
+    opacity: 0;
+  }
+  30% {
+    stroke-dashoffset: -150;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: $final-opacity;
+  }
+}
+@keyframes k-ani {
+  0% {
+    stroke-dashoffset: -160;
+    opacity: 0;
+  }
+  30% {
+    stroke-dashoffset: -150;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: $final-opacity;
+  }
+}
+@-webkit-keyframes z-ani {
+  0% {
+    stroke-dashoffset: -310;
+    opacity: 0;
+  }
+  30% {
+    stroke-dashoffset: -300;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: $final-opacity;
+  }
+}
+@-moz-keyframes z-ani {
+  0% {
+    stroke-dashoffset: -310;
+    opacity: 0;
+  }
+  30% {
+    stroke-dashoffset: -300;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: $final-opacity;
+  }
+}
+@keyframes z-ani {
+  0% {
+    stroke-dashoffset: -310;
+    opacity: 0;
+  }
+  30% {
+    stroke-dashoffset: -300;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: $final-opacity;
+  }
+}
+
+
+/* KZ Photo -------------------------------------- */
+
+
+.kz-photo {
+  width: 227px;
+  height: 227px;
+  //position: absolute;
+  position: relative;
+  margin: auto;
+  //top: 0; bottom: 0;
+  //right: 0; left: 0;
+  img, a {
+    position: absolute;
+    top: 3px; left: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: $circle-weight solid #fff;
+    width: 212px;
+    height: 212px;
+  }
+  img {
+    opacity: 1;
+    z-index: 3;
+    @include animation(photo-ani 4s forwards);
+  }
+  a {
+    z-index: 4;
+    border-color: $accent;
+    background: $accent;
+    color: #fff;
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+    }
+    span {
+      font-size: 2em;
+      display: block;
+      padding: 1.8em .3em;
+      text-align: center;
+    }
+  }
+}
+.kz-photo-line {
+  z-index: 2;
+  position: relative;
+}
+.photo-line {
+  fill: none;
+  stroke: #fff;
+  stroke-width: $line-weight;
+
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  @include animation(photo-line-ani 4s forwards);
+}
+.circle {
+  stroke-width: $circle-weight;
+
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  @include animation(photo-line-ani 4s forwards);
+}
+
+/* Keyframes */
+@-webkit-keyframes photo-line-ani {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-moz-keyframes photo-line-ani {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes photo-line-ani {
+  to {
+    stroke-dashoffset: 0;
+  } 
+}
+@-webkit-keyframes photo-ani {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes photo-ani {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes photo-ani {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

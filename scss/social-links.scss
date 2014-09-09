@@ -1,0 +1,22 @@
+.social {
+  list-style-type: none;
+  margin: 0 0 1em; padding: 0;
+  overflow: hidden;
+  li {
+    padding: 0;
+    margin: 0 0 0 .5em;
+    display: inline-block;
+  }
+  a {
+    color: $text;
+    font-size: 1.6em;
+    display: block;
+    text-align: center;
+    &:hover {
+      color: $accent;
+    }
+  }
+  &:last-child {
+    margin: 0;
+  }
+}
