@@ -96,14 +96,26 @@
 	</svg>
 	<img src="http://www.kristenzirkler.com/wp-content/uploads/2014/08/kz-photo.jpg"  />
 </div>
-
+<div id="instafeed"></div>
+<!-- SnapWidget
+<script src="http://snapwidget.com/js/snapwidget.js"></script>
+<iframe src="http://snapwidget.com/in/?u=a3Jpc3RlbnppcmtsZXJ8aW58MTI1fDN8M3x8bm98NXxub25lfG9uU3RhcnR8eWVzfHllcw==&ve=100914" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
+ -->
 <div class="bg"><img src="http://www.kristenzirkler.com/wp-content/uploads/2014/05/IMG_3796.jpg" alt="Kristen Zirkler"></div>
 
 <!--
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 -->
-
+<script src="js/vendors/instafeed.min.js"></script>
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: '78af01dd70ed42c9be996d1f9e2fbc93'
+    });
+    feed.run();
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
